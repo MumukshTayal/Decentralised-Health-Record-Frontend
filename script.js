@@ -1,12 +1,25 @@
 const firstHalf = document.querySelector('.firstHalf');
 const firstHalfmodified = document.querySelector('.firstHalfmodified');
+
 const firstHalf_selector_1 = document.querySelector('.firstHalf-selector-1');
 const firstHalf_selector_2 = document.querySelector('.firstHalf-selector-2');
+
+const secondHalf = document.querySelector('.secondHalf');
+const secondHalfmodified = document.querySelector('.secondHalfmodified');
+
 const accordion = document.querySelectorAll('.accordion-item-header');
+const accordion_items = document.querySelector('.accordion-1');
 
-const accordion_items = document.querySelector('.accordion');
+const submitButton = document.querySelector('#submit-1');
+const loginButton = document.querySelector('#submit');
 
-const submitButton = document.querySelector('#submit');
+loginButton.addEventListener('click', () => {
+    if(!secondHalf.classList.contains('active')){
+        secondHalf.classList.toggle('active');
+        secondHalfmodified.classList.toggle('active');
+    }
+
+})
 
 submitButton.addEventListener('click', addNewAccordionItem);
 

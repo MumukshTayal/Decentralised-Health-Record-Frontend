@@ -169,6 +169,26 @@
     font-family: monospace;
 }
 
+.secondHalf.active {
+    display:none;
+}
+
+.secondHalfmodified {
+    display:none;
+}
+
+.secondHalfmodified.active {
+    width:50%;
+    background-color:rgba(0, 255, 255, 0.314);
+    color:rgb(42, 54, 54);
+    padding:5%;
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+}
+
 form input[type="text"] {
     width: 100%;
     padding: 5px;
@@ -260,6 +280,33 @@ form textarea {
     cursor: pointer;
 }
 
+#submit-1 {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(42, 54, 54);
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#submit-1:hover {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(42, 54, 54);
+    color: rgba(0, 255, 255, 0.567);
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 footer p {
     display: flex;
     justify-content: center;
@@ -268,6 +315,11 @@ footer p {
 }
 
 .accordion {
+    width: 90%;
+    max-width: 100%;
+}
+
+.accordion-1 {
     width: 90%;
     max-width: 100%;
 }
